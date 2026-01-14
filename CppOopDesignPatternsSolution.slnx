@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CppOopFoundumentalPatternsProject/CppOopFoundumentalPatternsProject.vcxproj" Id="274d4991-f665-48c3-9ef4-b18f9d6e6925" />
+</Solution>
