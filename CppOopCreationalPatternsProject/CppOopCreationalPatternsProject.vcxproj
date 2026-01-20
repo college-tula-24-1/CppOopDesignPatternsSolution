@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{274d4991-f665-48c3-9ef4-b18f9d6e6925}</ProjectGuid>
-    <RootNamespace>CppOopFoundumentalPatternsProject</RootNamespace>
+    <ProjectGuid>{5e54cbb9-c3ba-4305-9ded-2e75354f0c9b}</ProjectGuid>
+    <RootNamespace>CppOopCreationalPatternsProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,15 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CppOopFoundumentalPatternsProject.cpp" />
-    <ClCompile Include="DelegationPattern.cpp" />
+    <ClCompile Include="CppOopCreationalPatternsProject.cpp" />
     <ClCompile Include="Examples.cpp" />
-    <ClCompile Include="ImmutableInterfacePattern.cpp" />
-    <ClCompile Include="PropertyContainerPattern.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="Builder.h" />
+    <ClInclude Include="CoffeeShop.h" />
     <ClInclude Include="Examples.h" />
-    <ClInclude Include="Unuversitet.h" />
+    <ClInclude Include="FactoryMethod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

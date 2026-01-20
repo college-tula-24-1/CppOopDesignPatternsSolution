@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="CppOopCreationalPatternsProject/CppOopCreationalPatternsProject.vcxproj" Id="5e54cbb9-c3ba-4305-9ded-2e75354f0c9b" />
   <Project Path="CppOopFoundumentalPatternsProject/CppOopFoundumentalPatternsProject.vcxproj" Id="274d4991-f665-48c3-9ef4-b18f9d6e6925" />
 </Solution>
