@@ -1,8 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 
-#include "Builder.h"
-using namespace BuilderNamespace;
+
 
 
 // 1 Проблема
@@ -17,15 +16,8 @@ using namespace BuilderNamespace;
 
 int main()
 {
-    Builder* builder = new Builder();
-    Product* product1 = builder->AddName("Product 1")
-                                ->AddPartA()
-                                ->AddPartB()
-                                ->AddPartD()
-                                ->AddPartE()
-                                ->GetProduct();
     
-    product1->Info();
+        
 }
 
 

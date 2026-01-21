@@ -6,6 +6,11 @@ using namespace FactoryMethod;
 #include "AbstractFactory.h"
 using namespace AbstractFactoryNamespace;
 
+#include "Builder.h"
+using namespace BuilderNamespace;
+
+
+
 FactoryMethod::Unit* FactoryBad(int id)
 {
     FactoryMethod::Unit* unit;
@@ -32,7 +37,7 @@ public:
 class Examples
 {
 public:
-	void FactoryMethodExamples()
+	static void FactoryMethodExamples()
 	{
         std::cout << "App: Launched Creator A:\n";
         FactoryMethod::Client::ClientCode(new FactoryMethod::CreatorA());
@@ -65,6 +70,34 @@ public:
 
         std::cout << "Rome Army:\n" << romeArmy->Info() << "\n";
         std::cout << "Carthagen Army:\n" << carthagenArmy->Info() << "\n";
+    }
+
+    static void BuilderExamples()
+    {
+        /*Builder* builder = new Builder();
+        Product* product1 = builder->AddName("Product 1")
+                                    ->AddPartA()
+                                    ->AddPartB()
+                                    ->AddPartD()
+                                    ->AddPartE()
+                                    ->GetProduct();
+
+        product1->Info();*/
+
+        QueryBuilder* builder = new QueryBuilder();
+
+        Query* query = builder->Table("employees")
+            ->Select("id")
+            ->Select("last_name", "Last name")
+            ->Select("first_name", "First name")
+            ->Where("salary > 100000")
+            ->Where("YEAR(birthDate) > 2000", BoolOperation::AND)
+            ->Where("city = 'Moscow'", BoolOperation::OR)
+            ->OrderBy("last_name")
+            ->OrderBy("salary", false)
+            ->GetQuery();
+
+        std::cout << query->QueryString();
     }
 };
 
