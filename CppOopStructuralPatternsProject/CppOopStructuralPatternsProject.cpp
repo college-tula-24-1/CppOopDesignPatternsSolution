@@ -1,8 +1,7 @@
 ﻿#include <iostream>
-#include <vector>
-#include <thread>
 
-#include "RAII.h"
+#include "Adapter.h"
+using namespace AdapterNamespace;
 
 // 1 Проблема
 // 2 Решение
@@ -14,16 +13,9 @@
 
 int main()
 {
-    try
-    {
-        ResourceManager resManager("file.log");
-        resManager.Write("Hello world");
-    }
-    catch (std::exception ex)
-    {
-        std::cerr << ex.what() << "\n";
-    }
-    
+    Client* client = new Client();
+    client->ClientCode(new ConcreteClassA());
+    client->ClientCode(new ConcreteClassB());
+
+    client->ClientCode(new ServiceAdapter(new Service(), 500));
 }
-
-

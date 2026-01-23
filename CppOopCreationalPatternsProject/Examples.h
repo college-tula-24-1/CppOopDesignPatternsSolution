@@ -9,6 +9,14 @@ using namespace AbstractFactoryNamespace;
 #include "Builder.h"
 using namespace BuilderNamespace;
 
+#include "LazyInitialization.h"
+
+#include "Multiton.h"
+
+#include "ObjectPool.h"
+
+#include "Singleton.h"
+
 
 
 FactoryMethod::Unit* FactoryBad(int id)
@@ -26,7 +34,7 @@ FactoryMethod::Unit* FactoryBad(int id)
 class FactoryGood
 {
     std::vector<UnitFactory*> unitFactories;
-    std::vector<Unit*> army;
+    std::vector<FactoryMethod::Unit*> army;
 public:
     std::vector<UnitFactory*>& UnitFactories() { return unitFactories; }
 
@@ -99,6 +107,61 @@ public:
 
         std::cout << query->QueryString();
     }
+
+    static void LazyInitializationExamples()
+    {
+        Widget* widget = new Widget();
+
+        auto s = widget->GetStr();
+    }
+
+    static void MultitonExample()
+    {
+        Multiton* m0 = Multiton::GetInstance(MultitonType::ONE);
+        std::cout << m0->ToString() << "\n";
+    }
+
+    static void ObjectPoolExamples()
+    {
+        ObjectPool* pool = new ObjectPool();
+
+        for (int i{ 1 }; i < 20; i++)
+        {
+            auto obj = pool->CreateObject();
+            std::cout << "i: " << i << " id: " << (*obj)() << "\n";
+
+            if (i % 3 == 0)
+                pool->DeleteObject(obj);
+        }
+    }
+
+    static void SingletonExamples()
+    {
+        // Single Thread
+        /*Computer* computer = new Computer();
+        computer->Lounch("Windows");
+        std::cout << computer->System()->Title() << "\n";
+
+        computer->System() = OperationSystem::GetSystem("Linux");
+        std::cout << computer->System()->Title() << "\n";*/
+
+        // Multi Thread
+        auto computerLaunch = [](std::string title)
+            {
+                Computer* computer = new Computer();
+                computer->Lounch(title);
+                std::cout << computer->System()->Title() << "\n";
+            };
+
+        std::thread comp1(computerLaunch, "Windows");
+        std::thread comp2(computerLaunch, "Linux");
+
+        comp1.join();
+        comp2.join();
+
+        std::cout << "\n";
+    }
+
 };
 
 void FactoryGood::CreateArmy(int count)
