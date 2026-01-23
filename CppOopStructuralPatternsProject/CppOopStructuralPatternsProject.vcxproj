@@ -132,6 +132,9 @@
   <ItemGroup>
     <ClInclude Include="Adapter.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="StructuralPatterns.drawio" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
