@@ -1,7 +1,9 @@
-﻿#include <iostream>
+﻿#define _CRT_SECURE_NO_WARNINGS
 
-#include "Adapter.h"
-using namespace AdapterNamespace;
+#include <iostream>
+
+#include "Composite.h"
+using namespace ComponenetNamespace;
 
 // 1 Проблема
 // 2 Решение
@@ -13,9 +15,10 @@ using namespace AdapterNamespace;
 
 int main()
 {
-    Client* client = new Client();
-    client->ClientCode(new ConcreteClassA());
-    client->ClientCode(new ConcreteClassB());
+    /*Client* client = new Client();
+    client->ClientCode();*/
 
-    client->ClientCode(new ServiceAdapter(new Service(), 500));
+    Army* army = new Army();
+    army->CreateArmy();
+    army->Info();
 }
