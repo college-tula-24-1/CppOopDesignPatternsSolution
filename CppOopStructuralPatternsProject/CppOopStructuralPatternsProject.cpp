@@ -2,8 +2,8 @@
 
 #include <iostream>
 
-#include "Composite.h"
-using namespace ComponenetNamespace;
+#include "Flyweight.h"
+
 
 // 1 Проблема
 // 2 Решение
@@ -15,10 +15,6 @@ using namespace ComponenetNamespace;
 
 int main()
 {
-    /*Client* client = new Client();
-    client->ClientCode();*/
-
-    Army* army = new Army();
-    army->CreateArmy();
-    army->Info();
+    FlyweightClient* client = new FlyweightClient();
+    client->ClientCode();
 }
