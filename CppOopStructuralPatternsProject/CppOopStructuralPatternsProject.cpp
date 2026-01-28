@@ -1,9 +1,9 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+#include <typeinfo>
 
-#include "Flyweight.h"
-
+#include "Proxy.h"
 
 // 1 Проблема
 // 2 Решение
@@ -15,6 +15,11 @@
 
 int main()
 {
-    FlyweightClient* client = new FlyweightClient();
-    client->ClientCode();
+    Service* service = new Service();
+    Proxy* proxy = new Proxy(service);
+
+    ProxyClient* client = new ProxyClient();
+    client->ClientCode(service);
+    client->ClientCode(proxy);
+    
 }

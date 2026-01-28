@@ -14,6 +14,8 @@ using namespace DecoratorNamespace;
 #include "Facade.h"
 using namespace FacadeNamespace;
 
+#include "Flyweight.h"
+
 class Examples
 {
 public:
@@ -104,6 +106,10 @@ public:
                 new RuntimeEnvironment()));
     }
 
-
+    static void FlyweightExamples()
+    {
+        FlyweightClient* client = new FlyweightClient();
+        client->ClientCode();
+    }
 };
 

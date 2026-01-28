@@ -137,6 +137,7 @@
     <ClInclude Include="Examples.h" />
     <ClInclude Include="Facade.h" />
     <ClInclude Include="Flyweight.h" />
+    <ClInclude Include="Proxy.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="StructuralPatterns.drawio" />
