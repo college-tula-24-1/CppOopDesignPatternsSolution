@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="CppOopBehavioralPatternsProject/CppOopBehavioralPatternsProject.vcxproj" Id="77769ddc-d1de-4afa-b26a-26b49254a33b" />
   <Project Path="CppOopCreationalPatternsProject/CppOopCreationalPatternsProject.vcxproj" Id="5e54cbb9-c3ba-4305-9ded-2e75354f0c9b" />
   <Project Path="CppOopFoundumentalPatternsProject/CppOopFoundumentalPatternsProject.vcxproj" Id="274d4991-f665-48c3-9ef4-b18f9d6e6925" />
   <Project Path="CppOopStructuralPatternsProject/CppOopStructuralPatternsProject.vcxproj" Id="855b5d9b-0510-4e1f-b497-5da329acf7b2" />
