@@ -130,8 +130,10 @@
     <ClCompile Include="CppOopBehavioralPatternsProject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Examples.h" />
     <ClInclude Include="ForwardList.h" />
     <ClInclude Include="Interfaces.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

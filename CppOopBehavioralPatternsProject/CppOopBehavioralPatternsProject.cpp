@@ -1,8 +1,6 @@
 ﻿#include <iostream>
-#include "Vector.h"
-#include "ForwardList.h"
 
-void VectorIteratorExample();
+#include "ForwardList.h"
 
 int main()
 {
@@ -24,7 +22,7 @@ int main()
     int key;
     std::cin >> key;
 
-    auto node = list.Find(key);
+    /*auto node = list.Find(key);
     list.Insert(node, 100);
     list.Show();
 
@@ -33,25 +31,14 @@ int main()
     {
         std::cout << it->Current() << " ";
         it->Next();
-    }
+    }*/
 
+    auto it = list.FindValue(key);
+    std::cout << it->Current() << "\n";
+
+    /*list.Insert(it, 500);*/
+    std::cout << list.Remove(it) << "\n";
+    list.Show();
 }
 
-void VectorIteratorExample()
-{
-    Vector<int> vector;
-    for (int i{}; i < 10; i++)
-        vector.PushBack(rand() % 100);
 
-    for (size_t i{}; i < vector.Size(); i++)
-        std::cout << vector[i] << " ";
-    std::cout << "\n";
-
-    auto it = vector.GetReverceIterator();
-    while (!it->IsEnd())
-    {
-        std::cout << it->Current() << " ";
-        it->Next();
-    }
-    std::cout << "\n";
-}

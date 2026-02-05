@@ -30,8 +30,13 @@ public:
 	void Insert(Node<TValue>* node, TValue value);
 	TValue Remove(Node<TValue>* node);
 
+	IIterator<TValue>* FindValue(TValue value);
+	void Insert(IIterator<TValue>* iterator, TValue value);
+	TValue Remove(IIterator<TValue>* iterator);
+
 	IIterator<TValue>* GetForwardIterator() override;
 	IIterator<TValue>* GetReverceIterator() override { return nullptr; }
+
 };
 
 template <typename TValue>
@@ -42,6 +47,7 @@ public:
 	ForwardListForwardIterator(ForwardList<TValue>* list)
 		: IIterator<TValue>(list), currentNode{ list->Head() } { }
 
+	Node<TValue>* CurrentNode() { return currentNode; }
 
 	void Reset() override
 	{
@@ -53,7 +59,7 @@ public:
 		if (currentNode)
 			currentNode = currentNode->next;
 		
-		return !(bool)currentNode;
+		return (bool)currentNode;
 	}
 
 	bool IsEnd() override
@@ -149,6 +155,31 @@ inline TValue ForwardList<TValue>::Remove(Node<TValue>* node)
 
 	this->size--;
 	return value;
+}
+
+template<typename TValue>
+inline IIterator<TValue>* ForwardList<TValue>::FindValue(TValue value)
+{
+	IIterator<TValue>* iterator = this->GetForwardIterator();
+	while (!iterator->IsEnd())
+	{
+		if (iterator->Current() == value)
+			break;
+		iterator->Next();
+	}
+	return iterator;
+}
+
+template<typename TValue>
+inline void ForwardList<TValue>::Insert(IIterator<TValue>* iterator, TValue value)
+{
+	this->Insert(((ForwardListForwardIterator<TValue>*)iterator)->CurrentNode(), value);
+}
+
+template<typename TValue>
+inline TValue ForwardList<TValue>::Remove(IIterator<TValue>* iterator)
+{
+	return this->Remove(((ForwardListForwardIterator<TValue>*)iterator)->CurrentNode());
 }
 
 template<typename TValue>
