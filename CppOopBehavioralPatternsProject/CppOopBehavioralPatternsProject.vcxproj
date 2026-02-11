@@ -130,6 +130,7 @@
     <ClCompile Include="CppOopBehavioralPatternsProject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChainOfResponsibilityPattern.h" />
     <ClInclude Include="Examples.h" />
     <ClInclude Include="ForwardList.h" />
     <ClInclude Include="Interfaces.h" />

@@ -1,44 +1,18 @@
 ﻿#include <iostream>
 
-#include "ForwardList.h"
+#include "ChainOfResponsibilityPattern.h"
 
 int main()
 {
-    srand(time(nullptr));
+    ConcreteHandlerA* handlerA = new ConcreteHandlerA();
+    ConcreteHandlerB* handlerB = new ConcreteHandlerB();
+    ConcreteHandlerC* handlerC = new ConcreteHandlerC();
 
-    ForwardList<int> list;
+    handlerA->SetNext(handlerB)->SetNext(handlerC);
 
-    for (int i{}; i < 10; i++)
-        list.Push(rand() % 100);
-
-    list.Show();
-
-    /*for (int i{}; i < 5; i++)
-    {
-        std::cout << list.Pop() << "\n";
-        list.Show();
-    }*/
-    std::cout << "Input key of search: ";
-    int key;
-    std::cin >> key;
-
-    /*auto node = list.Find(key);
-    list.Insert(node, 100);
-    list.Show();
-
-    auto it = list.GetForwardIterator();
-    while (!it->IsEnd())
-    {
-        std::cout << it->Current() << " ";
-        it->Next();
-    }*/
-
-    auto it = list.FindValue(key);
-    std::cout << it->Current() << "\n";
-
-    /*list.Insert(it, 500);*/
-    std::cout << list.Remove(it) << "\n";
-    list.Show();
+    ChainClient* client = new ChainClient();
+    client->ClientCode(handlerA);
+    std::cout << "\n";
 }
 
 
