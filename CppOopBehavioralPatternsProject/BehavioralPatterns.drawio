@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
   <diagram name="Страница — 1" id="cNeVcUN2WSObBso9WK5l">
-    <mxGraphModel dx="983" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="815" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -179,22 +179,22 @@
         <mxCell id="U-Cve_fvSfQVPu_Yt5x3-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.993;entryY=0.402;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;dashed=1;dashPattern=8 8;" parent="1" source="U-Cve_fvSfQVPu_Yt5x3-30" target="U-Cve_fvSfQVPu_Yt5x3-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-1" value="Команда" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-1" value="Команда" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="265" y="1719" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-2" value="Command" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-2" value="Command" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="265" y="1759" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=16;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-3" target="yrOQMs0wJI6BkL7sQjlY-4">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=16;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-3" target="yrOQMs0wJI6BkL7sQjlY-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Invoker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- command : ICommand&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ setCommand(command&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ executeCommand()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Invoker&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- command : ICommand&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ setCommand(command&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ executeCommand()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="240" y="1950" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;ICommand&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ execute()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;ICommand&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ execute()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="520" y="1950" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;endSize=16;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-6" target="yrOQMs0wJI6BkL7sQjlY-4">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;endSize=16;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-6" target="yrOQMs0wJI6BkL7sQjlY-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="720" y="2070" />
@@ -202,10 +202,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteCommandB&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ execute()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteCommandB&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ execute()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="640" y="2110" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;endSize=16;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-7" target="yrOQMs0wJI6BkL7sQjlY-4">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=block;endFill=0;endSize=16;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-7" target="yrOQMs0wJI6BkL7sQjlY-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="520" y="2070" />
@@ -213,25 +213,25 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteCommandA&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- receiver : Receiver&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- params&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ execute()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteCommandA&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- receiver : Receiver&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- params&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ execute()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="415" y="2110" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=0;endSize=16;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-10" target="yrOQMs0wJI6BkL7sQjlY-7">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=0;endSize=16;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-10" target="yrOQMs0wJI6BkL7sQjlY-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Receiver&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ operationA()&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ operationB()&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;...&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Receiver&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ operationA()&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ operationB()&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;...&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="200" y="2110" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=16;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-12" target="yrOQMs0wJI6BkL7sQjlY-3">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=16;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-12" target="yrOQMs0wJI6BkL7sQjlY-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=16;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-12" target="yrOQMs0wJI6BkL7sQjlY-10">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=16;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-12" target="yrOQMs0wJI6BkL7sQjlY-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Client&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="40" y="1950" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-15" target="yrOQMs0wJI6BkL7sQjlY-3">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-15" target="yrOQMs0wJI6BkL7sQjlY-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="392" y="1930" />
@@ -239,26 +239,96 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-15" value="&amp;nbsp;Invoker (Отправитель) - хранит ссылку на команду&amp;nbsp;&lt;div&gt;и вызывает метод команды внутри.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;command.execute()&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-15" value="&amp;nbsp;Invoker (Отправитель) - хранит ссылку на команду&amp;nbsp;&lt;div&gt;и вызывает метод команды внутри.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;command.execute()&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="241" y="1820" width="304" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-18" target="yrOQMs0wJI6BkL7sQjlY-4">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-18" target="yrOQMs0wJI6BkL7sQjlY-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-18" value="&amp;nbsp;Command (Команда) - общий интерфейс для конкретных команд&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-18" value="&amp;nbsp;Command (Команда) - общий интерфейс для конкретных команд&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="640" y="1840" width="304" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-20" target="yrOQMs0wJI6BkL7sQjlY-6">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-20" target="yrOQMs0wJI6BkL7sQjlY-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-20" value="&amp;nbsp;ConcreteCommand (Конкретные Команды) - реализуют логику&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Зачастую вызывает встренные методы Получателя (Receiver)&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-20" value="&amp;nbsp;ConcreteCommand (Конкретные Команды) - реализуют логику&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Зачастую вызывает встренные методы Получателя (Receiver)&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="880" y="2040" width="213" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="yrOQMs0wJI6BkL7sQjlY-22" target="yrOQMs0wJI6BkL7sQjlY-10">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" parent="1" source="yrOQMs0wJI6BkL7sQjlY-22" target="yrOQMs0wJI6BkL7sQjlY-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yrOQMs0wJI6BkL7sQjlY-22" value="&lt;div&gt;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Receiver (&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Получатель) - испольнитель бизнес логики&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Обычно команды при выполнении своих действий&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;вызывают метода Получаетля.&lt;/span&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="yrOQMs0wJI6BkL7sQjlY-22" value="&lt;div&gt;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Receiver (&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Получатель) - испольнитель бизнес логики&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Обычно команды при выполнении своих действий&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;вызывают метода Получаетля.&lt;/span&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="200" y="2270" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-1" value="Посредник" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="260" y="2450" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-2" value="Mediator" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="260" y="2490" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;IMediator&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ notify(sender)&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-4" target="qbroMeZcKRZx03LmiriW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteMediator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- concreteComponentA&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- concreteComponentB&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ notify(sender)&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ reactOnA()&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ reactOnB()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2680" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Componenet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="2560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=16;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-6" target="qbroMeZcKRZx03LmiriW-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="2650" />
+              <mxPoint x="480" y="2650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=16;startArrow=open;startFill=0;startSize=16;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="2780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="2780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;endSize=16;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-6" target="qbroMeZcKRZx03LmiriW-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteComponenetA&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- mediator : IMediator&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ operationA()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="2680" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=16;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-9" target="qbroMeZcKRZx03LmiriW-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="2650" />
+              <mxPoint x="480" y="2650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConcreteComponenetB&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;- mediator : IMediator&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ operationB()&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="520" y="2680" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.769;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;endSize=16;startArrow=open;startFill=0;startSize=16;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-9" target="qbroMeZcKRZx03LmiriW-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="2780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.406;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;endSize=16;" edge="1" parent="1" source="qbroMeZcKRZx03LmiriW-9" target="qbroMeZcKRZx03LmiriW-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="2530" />
+              <mxPoint x="360" y="2530" />
+              <mxPoint x="360" y="2584" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qbroMeZcKRZx03LmiriW-20" value="if(sender == concreteComponenetA)&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;reactOnA()&lt;br&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2840" width="240" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

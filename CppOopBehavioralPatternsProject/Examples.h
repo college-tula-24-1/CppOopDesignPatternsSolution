@@ -9,6 +9,8 @@ using namespace ListNamespace;
 #include "ChainOfResponsibilityPattern.h"
 #include "Command.h"
 
+#include "Mediator.h"
+
 class Examples
 {
 public:
@@ -193,6 +195,18 @@ public:
         tv->Info();
     }
 
+    static void MediatrExamples()
+    {
+        //ComponentA* cA = new ComponentA();
+    //ComponentB* cB = new ComponentB();
+    //ComponentC* cC = new ComponentC();
 
+    //ConcreteMediator* mediator = new ConcreteMediator(cA, cB, cC);
+
+    //cA->EventOne();
+
+        Company* company = new Company();
+        company->Work();
+    }
 };
 

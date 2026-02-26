@@ -1,19 +1,29 @@
 ﻿#include <iostream>
+#include <time.h>
 
-#include "Mediator.h"
+#include "Memento.h"
 
 int main()
 {
-    //ComponentA* cA = new ComponentA();
-    //ComponentB* cB = new ComponentB();
-    //ComponentC* cC = new ComponentC();
+    srand(time(nullptr));
 
-    //ConcreteMediator* mediator = new ConcreteMediator(cA, cB, cC);
+    //MementoClient* client = new MementoClient();
+    //client->ClientCode();
 
-    //cA->EventOne();
+    Player* player = new Player();
+    PlayerHistory* history = new PlayerHistory(player);
 
-    Company* company = new Company();
-    company->Work();
+    for (int i{}; i < 5; i++)
+    {
+        player->Play();
+        std::cout << "Player state: " << player->State() << "\n";
+        history->Save();
+    }
+
+    history->Load();
+    history->Load();
+    history->Load();
+    std::cout << "Player state: " << player->State() << "\n";
 }
 
 
