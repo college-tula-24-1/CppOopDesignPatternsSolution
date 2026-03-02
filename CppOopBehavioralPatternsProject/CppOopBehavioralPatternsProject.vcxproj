@@ -138,6 +138,7 @@
     <ClInclude Include="List.h" />
     <ClInclude Include="Mediator.h" />
     <ClInclude Include="Memento.h" />
+    <ClInclude Include="Strategy.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

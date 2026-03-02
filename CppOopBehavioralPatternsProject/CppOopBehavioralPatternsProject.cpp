@@ -1,29 +1,36 @@
 ﻿#include <iostream>
 #include <time.h>
 
-#include "Memento.h"
+#include "Strategy.h"
 
 int main()
 {
-    srand(time(nullptr));
-
-    //MementoClient* client = new MementoClient();
+    //StrategyClient* client = new StrategyClient();
     //client->ClientCode();
 
-    Player* player = new Player();
-    PlayerHistory* history = new PlayerHistory(player);
+    Object* object = new Object();
+    object->AddProperty("name", "Bobby");
+    object->AddProperty("age", "28");
+    object->AddProperty("email", "bobby@mail.ru");
+    object->AddProperty("city", "Moscow");
 
-    for (int i{}; i < 5; i++)
+    for (int i{}; i < object->Size(); i++)
     {
-        player->Play();
-        std::cout << "Player state: " << player->State() << "\n";
-        history->Save();
+        auto p = object->At(i);
+        std::cout << p.first << ": " << p.second << "\n";
     }
+    std::cout << "\n";
 
-    history->Load();
-    history->Load();
-    history->Load();
-    std::cout << "Player state: " << player->State() << "\n";
+    object->ChangeProperty("age", "25");
+    object->RemoveProperty("city");
+    object->ChangeProperty("address", "Moscow");
+
+    for (int i{}; i < object->Size(); i++)
+    {
+        auto p = object->At(i);
+        std::cout << p.first << ": " << p.second << "\n";
+    }
+    std::cout << "\n";
 }
 
 
