@@ -10,6 +10,7 @@ using namespace ListNamespace;
 #include "Command.h"
 #include "Mediator.h"
 #include "Memento.h"
+#include "Strategy.h"
 
 class Examples
 {
@@ -230,6 +231,72 @@ public:
         history->Load();
         history->Load();
         std::cout << "Player state: " << player->State() << "\n";
+    }
+
+
+
+    static void StrategyExamples()
+    {
+        //StrategyClient* client = new StrategyClient();
+    //client->ClientCode();
+
+        Object* object = new Object();
+        object->AddProperty("name", "Bobby");
+        object->AddProperty("age", "28");
+        object->AddProperty("email", "bobby@mail.ru");
+        object->AddProperty("city", "Moscow");
+
+        for (int i{}; i < object->Size(); i++)
+        {
+            auto p = object->At(i);
+            std::cout << p.first << ": " << p.second << "\n";
+        }
+        std::cout << "\n";
+
+        object->ChangeProperty("age", "25");
+        object->RemoveProperty("city");
+        object->ChangeProperty("address", "Moscow");
+
+        for (int i{}; i < object->Size(); i++)
+        {
+            auto p = object->At(i);
+            std::cout << p.first << ": " << p.second << "\n";
+        }
+        std::cout << "\n";
+
+        try
+        {
+            auto property = object->At("age");
+            std::cout << property.first << ": " << property.second << "\n";
+        }
+        catch (std::exception* ex)
+        {
+            std::cout << "Error: " << ex->what() << "\n";
+        }
+
+        UniversalSerializer* serializer = new UniversalSerializer(new JsonSerializer());
+        std::string json = serializer->Serialize(object);
+        std::cout << json << "\n";
+
+        Object* o = serializer->Deserialize(json);
+        for (int i{}; i < o->Size(); i++)
+        {
+            auto p = o->At(i);
+            std::cout << p.first << ": " << p.second << "\n";
+        }
+        std::cout << "\n";
+
+        serializer->SetSerializer(new XmlSerializer());
+        std::string xml = serializer->Serialize(object);
+        std::cout << xml << "\n";
+
+        Object* obj = serializer->Deserialize(xml);
+        for (int i{}; i < obj->Size(); i++)
+        {
+            auto p = obj->At(i);
+            std::cout << p.first << ": " << p.second << "\n";
+        }
+        std::cout << "\n";
     }
 };
 

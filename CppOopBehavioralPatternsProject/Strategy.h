@@ -115,11 +115,136 @@ public:
 	{
 		return properties[index];
 	}
+
+	Property At(std::string key)
+	{
+		auto it = std::ranges::find_if(properties, [key](auto item)
+			{
+				return item.first == key;
+			});
+		if (it != std::ranges::end(properties))
+			return *it;
+		
+		throw new std::exception("not found property");
+	}
 };
 
-class ISerializator
+class ISerializer
 {
 public:
 	virtual std::string Serialize(Object* object) = 0;
 	virtual Object* Deserialize(std::string text) = 0;
+};
+
+class JsonSerializer : public ISerializer
+{
+public:
+	std::string Serialize(Object* object) override
+	{
+		std::string json{ "{\n" };
+
+		for (int i{}; i < object->Size(); i++)
+		{
+			json += "\t\"" + object->At(i).first + "\": \""
+				+ object->At(i).second + "\",\n";
+		}
+
+		json += "}\n";
+		return json;
+	}
+
+	Object* Deserialize(std::string text) override
+	{
+		int position{};
+		int length{};
+		Object* object = new Object();
+
+		while (position < text.length())
+		{
+			position = text.find("\"", position) + 1;
+			
+			if (!position) break;
+
+			length = text.find("\"", position) - position;
+			std::string key = text.substr(position, length);
+			position += length + 1;
+
+			position = text.find("\"", position) + 1;
+			length = text.find("\"", position) - position;
+			std::string value = text.substr(position, length);
+			position += length + 1;
+
+			object->AddProperty(key, value);
+		}
+
+		return object;
+	}
+};
+
+class XmlSerializer : public ISerializer
+{
+public:
+	std::string Serialize(Object* object) override
+	{
+		std::string xml{ "<object>\n" };
+		for (int i{}; i < object->Size(); i++)
+		{
+			xml += "\t<" + object->At(i).first + ">"
+				+ object->At(i).second 
+				+ "</" + object->At(i).first + ">\n";
+		}
+		xml += "</object>\n";
+
+		return xml;
+	}
+
+	Object* Deserialize(std::string text) override
+	{
+		Object* object = new Object();
+		int position{};
+		int length{};
+
+		while (position < text.size())
+		{
+			position = text.find("<", position) + 1;
+			if (!position) break;
+			length = text.find(">", position) - position;
+			std::string key = text.substr(position, length);
+			position += length + 1;
+			if (key == "object")
+				continue;
+			if (key == "/object")
+				break;
+
+			length = text.find("</", position) - position;
+			std::string value = text.substr(position, length);
+			position = text.find(">", position) + 1;
+
+			object->AddProperty(key, value);
+		}
+
+		return object;
+	}
+};
+
+class UniversalSerializer : public ISerializer
+{
+	ISerializer* serializer;
+public:
+	UniversalSerializer(ISerializer* serializer)
+		: serializer{ serializer }{ }
+	void SetSerializer(ISerializer* serializer)
+	{
+		this->serializer = serializer;
+	}
+
+	std::string Serialize(Object* object) override
+	{
+		return serializer->Serialize(object);
+	}
+
+	Object* Deserialize(std::string text) override
+	{
+		return serializer->Deserialize(text);
+	}
 };
