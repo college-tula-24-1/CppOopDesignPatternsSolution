@@ -1,15 +1,17 @@
 ﻿#include <iostream>
 #include <time.h>
 
-#include "State.h"
+#include "Observable.h"
 
 int main()
 {
-    //StateClient* client = new StateClient();
+    srand(time(nullptr));
+
+    //ObserverClient* client = new ObserverClient();
     //client->ClientCode();
 
-    WaterClient* client = new WaterClient();
-    client->ClientCode();
+    Buisness* buisness = new Buisness();
+    buisness->BuisnessTrading();
 }
 
 

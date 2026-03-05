@@ -11,6 +11,7 @@ using namespace ListNamespace;
 #include "Mediator.h"
 #include "Memento.h"
 #include "Strategy.h"
+#include "State.h"
 
 class Examples
 {
@@ -233,8 +234,6 @@ public:
         std::cout << "Player state: " << player->State() << "\n";
     }
 
-
-
     static void StrategyExamples()
     {
         //StrategyClient* client = new StrategyClient();
@@ -298,5 +297,16 @@ public:
         }
         std::cout << "\n";
     }
+
+    static void StateExamples()
+    {
+        //StateClient* client = new StateClient();
+    //client->ClientCode();
+
+        WaterClient* client = new WaterClient();
+        client->ClientCode();
+    }
+
+
 };
 
