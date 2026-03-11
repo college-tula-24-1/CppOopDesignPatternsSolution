@@ -1,0 +1,11 @@
+<person>
+	<name>Bobby</name>
+	<number>AD_12345</number>
+	<amount>250000</amount>
+</person>
+<company>
+	<title>Yandex</title>
+	<number>TWE 16235344 90 PL</number>
+	<license>ASC-000012346</license>
+	<amount>12678000</amount>
+</company>

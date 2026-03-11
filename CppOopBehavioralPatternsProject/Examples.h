@@ -12,6 +12,7 @@ using namespace ListNamespace;
 #include "Memento.h"
 #include "Strategy.h"
 #include "State.h"
+#include "Observable.h"
 
 class Examples
 {
@@ -307,6 +308,15 @@ public:
         client->ClientCode();
     }
 
+    static void ObservableExamples()
+    {
+        srand(time(nullptr));
 
+        //ObserverClient* client = new ObserverClient();
+        //client->ClientCode();
+
+        Buisness* buisness = new Buisness();
+        buisness->BuisnessTrading();
+    }
 };
 

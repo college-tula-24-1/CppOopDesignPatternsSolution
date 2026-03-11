@@ -1,17 +1,31 @@
 ﻿#include <iostream>
 #include <time.h>
 
-#include "Observable.h"
+#include "Visitor.h"
+
 
 int main()
 {
-    srand(time(nullptr));
-
-    //ObserverClient* client = new ObserverClient();
+    //VisitorClient* client = new VisitorClient();
     //client->ClientCode();
 
-    Buisness* buisness = new Buisness();
-    buisness->BuisnessTrading();
+    Bank* bank = new Bank();
+    
+    Person* bobby = new Person();
+    bobby->Name() = "Bobby";
+    bobby->Number() = "AD_12345";
+    bobby->Amount() = 250000;
+    bank->Add(bobby);
+
+    Company* yandex = new Company();
+    yandex->Title() = "Yandex";
+    yandex->Number() = "TWE 16235344 90 PL";
+    yandex->License() = "ASC-000012346";
+    yandex->Amount() = 12678000;
+    bank->Add(yandex);
+
+    bank->AcceptAll(new JsonVisitor());
+    bank->AcceptAll(new XmlVisitor());
 }
 
 
