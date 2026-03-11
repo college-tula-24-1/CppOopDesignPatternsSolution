@@ -1,31 +1,23 @@
 ﻿#include <iostream>
 #include <time.h>
 
-#include "Visitor.h"
-
+#include "Interpreter.h"
 
 int main()
 {
-    //VisitorClient* client = new VisitorClient();
-    //client->ClientCode();
+    // (a + b * c) * d -> (10 + 5 * 2) * 6 = 120
+    Context* context = new Context();
+    context->SetVariable("a", 10);
+    context->SetVariable("b", 5);
+    context->SetVariable("c", 2);
+    context->SetVariable("d", 6);
 
-    Bank* bank = new Bank();
-    
-    Person* bobby = new Person();
-    bobby->Name() = "Bobby";
-    bobby->Number() = "AD_12345";
-    bobby->Amount() = 250000;
-    bank->Add(bobby);
-
-    Company* yandex = new Company();
-    yandex->Title() = "Yandex";
-    yandex->Number() = "TWE 16235344 90 PL";
-    yandex->License() = "ASC-000012346";
-    yandex->Amount() = 12678000;
-    bank->Add(yandex);
-
-    bank->AcceptAll(new JsonVisitor());
-    bank->AcceptAll(new XmlVisitor());
+    IExpression* expression = new MultOperation(
+        new AddOperation(new NumberExpression("a"),
+            new MultOperation(new NumberExpression("b"),
+                              new NumberExpression("c"))),
+        new NumberExpression("d"));
+    std::cout << expression->Interpret(context);
 }
 
 

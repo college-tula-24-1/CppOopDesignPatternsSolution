@@ -135,12 +135,14 @@
     <ClInclude Include="Examples.h" />
     <ClInclude Include="ForwardList.h" />
     <ClInclude Include="Interfaces.h" />
+    <ClInclude Include="Interpreter.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="Mediator.h" />
     <ClInclude Include="Memento.h" />
     <ClInclude Include="Observable.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="Strategy.h" />
+    <ClInclude Include="TemplateMethod.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Visitor.h" />
   </ItemGroup>
