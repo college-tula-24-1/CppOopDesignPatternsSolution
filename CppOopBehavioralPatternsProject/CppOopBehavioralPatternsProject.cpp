@@ -1,23 +1,14 @@
 ﻿#include <iostream>
 #include <time.h>
 
-#include "Interpreter.h"
+#include "RomanNumbers.h"
 
 int main()
 {
-    // (a + b * c) * d -> (10 + 5 * 2) * 6 = 120
-    Context* context = new Context();
-    context->SetVariable("a", 10);
-    context->SetVariable("b", 5);
-    context->SetVariable("c", 2);
-    context->SetVariable("d", 6);
+    RNInterpreter* interpreter = new RNInterpreter();
+    std::string rn{ "MMMM" }; // 1996, 3999
 
-    IExpression* expression = new MultOperation(
-        new AddOperation(new NumberExpression("a"),
-            new MultOperation(new NumberExpression("b"),
-                              new NumberExpression("c"))),
-        new NumberExpression("d"));
-    std::cout << expression->Interpret(context);
+    std::cout << rn << " is " << interpreter->Interpret(rn);
 }
 
 

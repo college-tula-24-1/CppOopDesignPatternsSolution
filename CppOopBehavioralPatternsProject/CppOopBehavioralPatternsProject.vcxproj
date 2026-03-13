@@ -140,6 +140,7 @@
     <ClInclude Include="Mediator.h" />
     <ClInclude Include="Memento.h" />
     <ClInclude Include="Observable.h" />
+    <ClInclude Include="RomanNumbers.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="Strategy.h" />
     <ClInclude Include="TemplateMethod.h" />
